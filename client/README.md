@@ -13,12 +13,12 @@ API: open library search Api
 Deployment: CodeSandbox
 
 # Installation & setup
-cd book-finder
-npm create vite&latest
-project-name: client
-cd client
-npm install
-npm run dev
+- cd book-finder  ,
+- npm create vite&latest ,
+- project-name: client ,
+- cd client ,
+- npm install ,
+- npm run dev
 
 
 ##  Features
