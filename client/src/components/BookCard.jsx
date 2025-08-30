@@ -1,15 +1,15 @@
 import React from "react";
 
 function coverUrl(doc) {
-  // If cover_i exists → OpenLibrary cover API
+  
   if (doc.cover_i) {
     return `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`;
   }
-  // If ISBN exists → fallback to ISBN cover
+
   if (doc.isbn && doc.isbn.length > 0) {
     return `https://covers.openlibrary.org/b/isbn/${doc.isbn[0]}-M.jpg`;
   }
-  // Placeholder if no cover
+  
   return "https://via.placeholder.com/180x260?text=No+Cover";
 }
 
